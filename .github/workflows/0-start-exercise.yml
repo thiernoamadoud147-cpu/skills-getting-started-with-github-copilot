@@ -20,8 +20,8 @@ jobs:
     name: Start Exercise
     uses: skills/exercise-toolkit/.github/workflows/start-exercise.yml@v0.8.1
     with:
-      exercise-title: "Getting Started with GitHub Copilot"
-      intro-message: "Welcome to the exciting world of GitHub Copilot! 🚀 In this exercise, you'll unlock the potential of this AI-powered coding assistant to accelerate your development process. Let's dive in and have some fun exploring the future of coding together! 💻✨"
+      exercise-title: "Premiers pas avec GitHub Copilot"
+      intro-message: "Bienvenue dans le monde passionnant de GitHub Copilot ! 🚀 Dans cet exercice, vous découvrirez le potentiel de cet assistant de programmation basé sur l’IA pour accélérer votre développement. Explorons ensemble l’avenir du développement avec plaisir ! 💻✨"
 
   post_next_step_content:
     name: Post next step content

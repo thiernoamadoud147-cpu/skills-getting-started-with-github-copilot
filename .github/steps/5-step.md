@@ -1,27 +1,27 @@
-## Step 5: Using GitHub Copilot within a pull request
+## Étape 5 : utiliser GitHub Copilot dans une pull request
 
-Congratulations! You are finished with coding for this exercise (and VS Code). Now it's time to merge our work. :tada: To wrap up, let's learn about two limited-access Copilot features that can speed up our pull requests!
+Félicitations ! Vous avez terminé le codage de cet exercice (et l’utilisation de VS Code). Il est maintenant temps de fusionner notre travail. :tada: Pour conclure, découvrons deux fonctionnalités Copilot à accès limité qui peuvent accélérer nos pull requests !
 
-### 📖 Theory: GitHub Copilot for pull requests
+### 📖 Théorie : GitHub Copilot pour les pull requests
 
-#### Copilot pull request summaries
+#### Résumés de pull requests avec Copilot
 
-Typically, you would review your notes and commit messages then summarize them for your pull request description. This may take some time, especially if commit messages are inconsistent or code is not documented well. Fortunately, Copilot can consider all changes in the pull request and provide the important highlights, and with references too!
+Habituellement, vous relisez vos notes et vos messages de commit avant de les résumer dans la description de votre pull request. Cela peut prendre du temps, surtout si les messages sont incohérents ou si le code est mal documenté. Heureusement, Copilot peut examiner toutes les modifications de la pull request et en présenter les points importants, avec des références !
 
-#### Copilot code review
+#### Revue de code avec Copilot
 
-More eyes on our work is always useful so let's ask Copilot to do a first pass before we do a normal peer review process. Copilot is great at catching common mistakes that are fixed by simple adjustments, but please remember to use it responsibly.
+Un regard supplémentaire est toujours utile. Demandons donc à Copilot d’effectuer une première revue avant la revue classique par les pairs. Copilot détecte bien les erreurs courantes qui se corrigent facilement, mais utilisez-le de manière responsable.
 
 > [!NOTE]
-> These features are only available on paid plans of **GitHub Copilot**. [[docs]](https://docs.github.com/en/copilot/get-started/plans)
+> Ces fonctionnalités sont uniquement disponibles avec les offres payantes de **GitHub Copilot**. [[documentation]](https://docs.github.com/en/copilot/get-started/plans)
 
-### :keyboard: Activity: Summarize and review a PR with Copilot
+### :keyboard: Activité : résumer et examiner une PR avec Copilot
 
-Both **Copilot pull request summaries** and **Copilot code review** have limited access, so this activity is mostly optional. If you don't have access, skip the optional steps of this activity.
+Les **résumés de pull requests** et la **revue de code Copilot** ont un accès limité ; cette activité est donc principalement facultative. Si vous n’y avez pas accès, ignorez les étapes facultatives.
 
-1. In a web browser, open another tab and navigate to your exercise repository.
+1. Dans un navigateur web, ouvrez un autre onglet et accédez au dépôt de votre exercice.
 
-1. You might notice a **notification banner** suggesting to create a new pull request. Click that or use the **Pull Requests** tab at the top to **create a new pull request**. Please use the following details:
+1. Une **bannière de notification** vous proposera peut-être de créer une nouvelle pull request. Cliquez dessus ou utilisez l’onglet **Pull requests** en haut pour **créer une pull request**. Utilisez les informations suivantes :
 
    - **base:** `main`
    - **compare:** `accelerate-with-copilot`
@@ -37,6 +37,6 @@ Both **Copilot pull request summaries** and **Copilot code review** have limited
 
    > 💡 **Tip:** Notice a log entry that Copilot was requested for a review.
 
-1. At the bottom, press the **Merge pull request** button. Nice work! You are all done! :tada:
+1. En bas de la page, cliquez sur le bouton **Merge pull request**. Excellent travail, vous avez terminé ! :tada:
 
-1. Wait a moment for Mona to check your work, provide feedback, and post a final review of this exercise!
+1. Attendez quelques instants que Mona vérifie votre travail, fournisse des commentaires et publie la revue finale de cet exercice !

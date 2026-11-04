@@ -23,8 +23,8 @@ document.addEventListener("DOMContentLoaded", () => {
         activityCard.innerHTML = `
           <h4>${name}</h4>
           <p>${details.description}</p>
-          <p><strong>Schedule:</strong> ${details.schedule}</p>
-          <p><strong>Availability:</strong> ${spotsLeft} spots left</p>
+          <p><strong>Horaires :</strong> ${details.schedule}</p>
+          <p><strong>Disponibilité :</strong> ${spotsLeft} place(s) restante(s)</p>
         `;
 
         activitiesList.appendChild(activityCard);
@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", () => {
         activitySelect.appendChild(option);
       });
     } catch (error) {
-      activitiesList.innerHTML = "<p>Failed to load activities. Please try again later.</p>";
+      activitiesList.innerHTML = "<p>Impossible de charger les activités. Réessayez plus tard.</p>";
       console.error("Error fetching activities:", error);
     }
   }
@@ -63,7 +63,7 @@ document.addEventListener("DOMContentLoaded", () => {
         messageDiv.className = "success";
         signupForm.reset();
       } else {
-        messageDiv.textContent = result.detail || "An error occurred";
+        messageDiv.textContent = result.detail || "Une erreur s’est produite";
         messageDiv.className = "error";
       }
 
@@ -74,7 +74,7 @@ document.addEventListener("DOMContentLoaded", () => {
         messageDiv.classList.add("hidden");
       }, 5000);
     } catch (error) {
-      messageDiv.textContent = "Failed to sign up. Please try again.";
+      messageDiv.textContent = "Impossible de vous inscrire. Réessayez.";
       messageDiv.className = "error";
       messageDiv.classList.remove("hidden");
       console.error("Error signing up:", error);
