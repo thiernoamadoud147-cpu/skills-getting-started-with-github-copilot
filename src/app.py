@@ -105,3 +105,17 @@ def signup_for_activity(activity_name: str, email: str):
     # Add student
     activity["participants"].append(email)
     return {"message": f"{email} est inscrit(e) à l’activité {activity_name}"}
+
+
+@app.delete("/activities/{activity_name}/signup")
+def unregister_from_activity(activity_name: str, email: str):
+    """Désinscrire un élève d’une activité."""
+    if activity_name not in activities:
+        raise HTTPException(status_code=404, detail="Activité introuvable")
+
+    activity = activities[activity_name]
+    if email not in activity["participants"]:
+        raise HTTPException(status_code=404, detail="Élève non inscrit(e) à cette activité")
+
+    activity["participants"].remove(email)
+    return {"message": f"{email} a été désinscrit(e) de l’activité {activity_name}"}
