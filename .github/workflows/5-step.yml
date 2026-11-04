@@ -64,4 +64,4 @@ jobs:
     uses: skills/exercise-toolkit/.github/workflows/finish-exercise.yml@v0.8.1
     with:
       issue-url: ${{ needs.find_exercise.outputs.issue-url }}
-      exercise-title: "Getting Started with GitHub Copilot"
+      exercise-title: "Premiers pas avec GitHub Copilot"

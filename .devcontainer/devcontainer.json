@@ -9,7 +9,8 @@
         "ms-python.python",
         "ms-python.debugpy",
         "GitHub.copilot-chat",
-        "GitHub.copilot"
+        "GitHub.copilot",
+        "MS-CEINTL.vscode-language-pack-fr"
       ]
     }
   }

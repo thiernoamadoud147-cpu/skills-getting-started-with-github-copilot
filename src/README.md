@@ -1,50 +1,50 @@
-# Mergington High School Activities API
+# API des activités du lycée de Mergington
 
-A super simple FastAPI application that allows students to view and sign up for extracurricular activities.
+Une application FastAPI très simple qui permet aux élèves de consulter les activités extrascolaires et de s’y inscrire.
 
-## Features
+## Fonctionnalités
 
-- View all available extracurricular activities
-- Sign up for activities
+- Consulter toutes les activités extrascolaires disponibles
+- S’inscrire à des activités
 
-## Getting Started
+## Démarrage
 
-1. Install the dependencies:
+1. Installez les dépendances :
 
    ```
    pip install fastapi uvicorn
    ```
 
-2. Run the application:
+2. Lancez l’application :
 
    ```
    python app.py
    ```
 
-3. Open your browser and go to:
-   - API documentation: http://localhost:8000/docs
-   - Alternative documentation: http://localhost:8000/redoc
+3. Ouvrez votre navigateur et accédez à :
+   - Documentation de l’API : http://localhost:8000/docs
+   - Documentation alternative : http://localhost:8000/redoc
 
-## API Endpoints
+## Points de terminaison de l’API
 
 | Method | Endpoint                                                          | Description                                                         |
 | ------ | ----------------------------------------------------------------- | ------------------------------------------------------------------- |
-| GET    | `/activities`                                                     | Get all activities with their details and current participant count |
-| POST   | `/activities/{activity_name}/signup?email=student@mergington.edu` | Sign up for an activity                                             |
+| GET    | `/activities`                                                     | Obtenir toutes les activités, leurs détails et le nombre actuel de participants |
+| POST   | `/activities/{activity_name}/signup?email=student@mergington.edu` | Inscrire un élève à une activité                                   |
 
-## Data Model
+## Modèle de données
 
-The application uses a simple data model with meaningful identifiers:
+L’application utilise un modèle de données simple avec des identifiants explicites :
 
-1. **Activities** - Uses activity name as identifier:
+1. **Activités** — Le nom de l’activité sert d’identifiant :
 
    - Description
-   - Schedule
-   - Maximum number of participants allowed
-   - List of student emails who are signed up
+   - Horaires
+   - Nombre maximal de participants autorisés
+   - Liste des adresses e-mail des élèves inscrits
 
-2. **Students** - Uses email as identifier:
-   - Name
-   - Grade level
+2. **Élèves** — L’adresse e-mail sert d’identifiant :
+   - Nom
+   - Niveau scolaire
 
-All data is stored in memory, which means data will be reset when the server restarts.
+Toutes les données sont stockées en mémoire ; elles sont donc réinitialisées au redémarrage du serveur.
